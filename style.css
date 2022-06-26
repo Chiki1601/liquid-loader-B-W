@@ -1,0 +1,26 @@
+html, body {
+  background: #000;
+ } 
+
+svg {
+  z-index: 999;
+  position: relative;
+}
+
+#clipPath {
+  -webkit-animation: waterClimb 9s linear 1;
+  transform: translateY(-110px); 
+}
+#clippingPath{
+  -webkit-animation: waterSlide 1.1s infinite linear;     
+}
+ 
+@-webkit-keyframes waterSlide {
+  0%   { transform: translateX(126px); }
+  100% { transform: translateX(-273px); }
+}
+
+@-webkit-keyframes waterClimb {
+  0% { transform: translateY(50px); }
+  100% { transform: translateY(-70px); }
+}
